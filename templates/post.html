@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+{% block body %}
+  <!-- Page Header -->
+  
+  <header class="masthead" style="background-image: url('  {{ url_for('static', filename='img/about-bg.jpg') }}      ')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>How it Works?</h1>
+            <h2 class="subheading">Here is the working of Text Sentiment Analysis</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h1>Sentiment Analysis in Hindi</h1>
+          <p>Sentiment Analysis in Hindi is very challenging because hindi is a resource scarce language which causes problems in collection and generation of datasets. Also, there are not efficient parsers and taggers for this language. </p>
+          <p>Text sentiment analysis in hindi is done by performing the Resource based classification using HindiSentiWordNet(H-SWN). Each word present in the H-SWN has a positive and a negative sentiment score. Based on the maximum of the scores, a polarity is assigned to each word in a text. The polarity which covers the maximum number of words in a text is predicted as the sentiment of that text. </p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+   <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h1>Sentiment Analysis in English</h1>
+          <p>To process the text in english, Textblob is used.</p>
+          <p>TextBlob is a Python (2 and 3) library for processing textual data. The sentiment function of textblob returns two properties, polarity, and subjectivity. Polarity is float which lies in the range of [-1,1] where 1 means positive statement and -1 means a negative statement. </p>
+          <p>The text is passed to the sentiment function of textblob to give its sentiment as positive, negative or neutral.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block body %}
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url(' {{ url_for('static', filename='img/home-bg.jpg') }}' )">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Sentiment Analysis App</h1>
+            <span class="subheading">App for test sentiment analysis</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        
+        <div class="post-preview">
+          <a href="/english">
+            <h2 class="post-title">
+              Text Sentiment Analysis in English
+            </h2>
+            
+          </a>
+        </div>
+         To process English text
+        <hr>
+        </a></li>
+
+        <div class="post-preview">
+          <a href="/hindi">
+            <h2 class="post-title">
+              Text Sentiment Analysis in hindi
+            </h2>
+            
+          </a>
+        </div>
+         To process hindi text
+        <hr>
+        </a></li>
+        
+    {% endblock %}
