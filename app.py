@@ -7,7 +7,7 @@ from flask import Flask, render_template, request
 
 
 app = Flask(__name__)
-app._Static_folder = ''
+app._static_folder = '/Static'
 # open a file, where you stored the pickled data
 file = open('word_dict', 'rb')
 words_dict = pickle.load(file)
