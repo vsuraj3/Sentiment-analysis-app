@@ -12,3 +12,4 @@ Werkzeug==0.16.0
 scipy==1.4.1
 seaborn==0.10.0
 textblob==0.15.3
+whitenoise==5.0.1
